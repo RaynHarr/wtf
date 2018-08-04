@@ -29,6 +29,9 @@ a {
   margin: 0;
   font-size: 60px;
   line-height: 1.2;
+  animation: HeroAnimation 3s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .HeroGroup p {
@@ -36,6 +39,20 @@ a {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 40px;
+  animation: HeroAnimation 3s 0.1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes HeroAnimation {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 .HeroGroup a {
@@ -47,7 +64,7 @@ a {
   padding: 9px 20px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
-  transition: 1s;
+  transition: 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .HeroGroup a:hover {
@@ -66,3 +83,4 @@ a {
     padding: 100px 20px;
   }
 }
+
