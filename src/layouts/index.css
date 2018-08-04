@@ -91,3 +91,9 @@ a {
   }
 }
 
+.CardGroup {
+  margin: 50px 40px 100px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(2, 1fr);
+}

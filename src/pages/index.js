@@ -25,16 +25,58 @@ const IndexPage = () => (
         </path>
       </svg>
     </div>
-    <Card 
-      title="React for designers"
-      text="12 sections"
-      image={require('../../static/images/wallpaper.jpg')}
-    />
-    <Card 
-      title="Design system in Figma"
-      text="10 sections"
-      image={require('../../static/images/wallpaper3.jpg')}
-    />
+    <div className="CardGroup">
+      <Card 
+        title="React for designers"
+        text="12 sections"
+        image={require('../../static/images/wallpaper.jpg')}
+      />
+      <Card 
+        title="Design system in Figma"
+        text="10 sections"
+        image={require('../../static/images/wallpaper3.jpg')}
+      />
+      <Card 
+        title="Design system in Figma"
+        text="10 sections"
+        image={require('../../static/images/wallpaper3.jpg')}
+      />
+      <Card 
+        title="Design system in Figma"
+        text="10 sections"
+        image={require('../../static/images/wallpaper3.jpg')}
+      />
+      <Card 
+        title="Design system in Figma"
+        text="10 sections"
+        image={require('../../static/images/wallpaper3.jpg')}
+      />
+      <Card 
+        title="Design system in Figma"
+        text="10 sections"
+        image={require('../../static/images/wallpaper3.jpg')}
+      />
+      <Card 
+        title="Design system in Figma"
+        text="10 sections"
+        image={require('../../static/images/wallpaper3.jpg')}
+      />
+      <Card 
+        title="Design system in Figma"
+        text="10 sections"
+        image={require('../../static/images/wallpaper3.jpg')}
+      />
+      <Card 
+        title="Design system in Figma"
+        text="10 sections"
+        image={require('../../static/images/wallpaper3.jpg')}
+      />
+      <Card 
+        title="Design system in Figma"
+        text="10 sections"
+        image={require('../../static/images/wallpaper3.jpg')}
+      />
+    </div>
   </div>
 )
 
