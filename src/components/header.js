@@ -17,12 +17,16 @@ class Header extends React.Component {
 
   handleScroll = (event) => {
     const scrollTop = window.pageYOffset
-    console.log(scrollTop)
+    if (scrollTop > 50) {
+      this.setState({ hasScrolled: true })
+    } else {
+      this.setState({ hasScrolled: false })
+    }
   }
 
   render() {
     return (
-      <div className="Header">
+      <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
         <div className="HeaderGroup">
           <Link to="/"><img src={require('../../static/images/logo-designcode.svg')} /></Link>
           <Link to="/courses">Courses</Link>
