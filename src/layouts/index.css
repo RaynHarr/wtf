@@ -15,6 +15,13 @@ a {
   background: url('../../static/images/wallpaper3.jpg');
   background-size: cover;
   background-position: center;
+  position: relative;
+}
+
+.Hero svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .HeroGroup {
