@@ -32,7 +32,7 @@ a {
 }
 
 .HeroGroup p {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 40px;
@@ -53,4 +53,16 @@ a {
 .HeroGroup a:hover {
   background: white;
   color: black;
+}
+
+@media (max-width: 640px) {
+  .HeroGroup h1 {
+    font-size: 40px;
+  }
+  .HeroGroup p {
+    font-size: 24px;
+  }
+  .HeroGroup {
+    padding: 100px 20px;
+  }
 }
