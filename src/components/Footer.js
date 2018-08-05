@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 const Footer = ({ links, children }) => (
     <FooterGroup>
-        <Text>Tweet me @srinitude</Text>
-        <Button>Tweet</Button>
+        <Text>Thanks for checking out my example React project. If you like what you see, tweet me @srinitude</Text>
+        <Button><a href="https://twitter.com/srinitude" target="_blank">Tweet</a></Button>
         <LinkGroup>
         {links.map(link => (
             <a href={link.node.url}>{link.node.title}</a>
@@ -29,6 +29,7 @@ const Text = styled.p`
     color: #486791;
     max-width: 500px;
     margin: 0 auto;
+    text-align: center;
 `
 
 const Button = styled.button`
@@ -45,6 +46,11 @@ const Button = styled.button`
     &:hover {
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         transform: translateY(-3px);
+    }
+
+    a {
+        color: white;
+        font-weight: 400;
     }
 `
 
