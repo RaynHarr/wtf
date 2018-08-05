@@ -34,47 +34,47 @@ const IndexPage = () => (
       <Card 
         title="Design system in Figma"
         text="10 sections"
+        image={require('../../static/images/wallpaper2.jpg')}
+      />
+      <Card 
+        title="Sketch"
+        text="11 sections"
         image={require('../../static/images/wallpaper3.jpg')}
       />
       <Card 
-        title="Design system in Figma"
-        text="10 sections"
+        title="Framer X"
+        text="9 sections"
+        image={require('../../static/images/wallpaper4.jpg')}
+      />
+      <Card 
+        title="Xcode"
+        text="8 sections"
+        image={require('../../static/images/wallpaper.jpg')}
+      />
+      <Card 
+        title="Swift"
+        text="7 sections"
+        image={require('../../static/images/wallpaper2.jpg')}
+      />
+      <Card 
+        title="React Native"
+        text="8 sections"
         image={require('../../static/images/wallpaper3.jpg')}
       />
       <Card 
-        title="Design system in Figma"
-        text="10 sections"
-        image={require('../../static/images/wallpaper3.jpg')}
+        title="JavaScript"
+        text="9 sections"
+        image={require('../../static/images/wallpaper4.jpg')}
       />
       <Card 
-        title="Design system in Figma"
+        title="HTML"
         text="10 sections"
-        image={require('../../static/images/wallpaper3.jpg')}
+        image={require('../../static/images/wallpaper.jpg')}
       />
       <Card 
-        title="Design system in Figma"
-        text="10 sections"
-        image={require('../../static/images/wallpaper3.jpg')}
-      />
-      <Card 
-        title="Design system in Figma"
-        text="10 sections"
-        image={require('../../static/images/wallpaper3.jpg')}
-      />
-      <Card 
-        title="Design system in Figma"
-        text="10 sections"
-        image={require('../../static/images/wallpaper3.jpg')}
-      />
-      <Card 
-        title="Design system in Figma"
-        text="10 sections"
-        image={require('../../static/images/wallpaper3.jpg')}
-      />
-      <Card 
-        title="Design system in Figma"
-        text="10 sections"
-        image={require('../../static/images/wallpaper3.jpg')}
+        title="CSS"
+        text="11 sections"
+        image={require('../../static/images/wallpaper2.jpg')}
       />
     </div>
   </div>
