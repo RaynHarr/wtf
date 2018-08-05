@@ -17,7 +17,9 @@ const Layout = ({ children, data }) => (
     />
     <Header />
     {children()}
-    <Footer links={data.allContentfulLinks.edges} />
+    <Footer links={data.allContentfulLinks.edges}>
+      © 2018 Kiren Srinivasan
+    </Footer>
   </div>
 )
 

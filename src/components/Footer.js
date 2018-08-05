@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Footer = ({ links }) => (
+const Footer = ({ links, children }) => (
     <FooterGroup>
-        <Text>Here's the footer</Text>
+        <Text>Tweet me @srinitude</Text>
         <Button>Tweet</Button>
         <LinkGroup>
         {links.map(link => (
             <a href={link.node.url}>{link.node.title}</a>
         ))}
         </LinkGroup>
-        <Copyright>© 2018 Kiren Srinivasan</Copyright>
+        <Copyright>{children}</Copyright>
     </FooterGroup>
 )
 
