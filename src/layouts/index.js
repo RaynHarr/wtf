@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import './index.css'
+import Footer from '../components/Footer';
 
 const Layout = ({ children, data }) => (
   <div>
@@ -16,6 +17,7 @@ const Layout = ({ children, data }) => (
     />
     <Header />
     {children()}
+    <Footer links={data.allContentfulLinks.edges} />
   </div>
 )
 
@@ -29,9 +31,17 @@ export const query = graphql`
   query SiteTitleQuery {
     site {
       siteMetadata {
-        title, 
-        description, 
+        title 
+        description 
         keywords
+      }
+    }
+    allContentfulLinks(sort: { fields: [createdAt], order: ASC }) {
+      edges {
+        node {
+          title
+          url
+        }
       }
     }
   }
