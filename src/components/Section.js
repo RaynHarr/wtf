@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Wave from './Wave';
 
-const Section = props => (
+const Section = (props) => (
     <SectionGroup image={props.image}>
         <WaveBottom>
             <Wave />

@@ -6,6 +6,7 @@ import Wave from '../components/Wave';
 import staticdata from '../../staticdata.json';
 import Cell from '../components/Cell';
 import styled from 'styled-components'
+import Plx from 'react-plx'
 
 const IndexPage = () => (
   <div>
@@ -18,56 +19,76 @@ const IndexPage = () => (
       <Wave />
     </div>
     <div className="CardGroup">
-      <Card 
-        title="React for designers"
-        text="12 sections"
-        image={require('../../static/images/wallpaper.jpg')}
-      />
-      <Card 
-        title="Design system in Figma"
-        text="10 sections"
-        image={require('../../static/images/wallpaper2.jpg')}
-      />
-      <Card 
-        title="Sketch"
-        text="11 sections"
-        image={require('../../static/images/wallpaper3.jpg')}
-      />
-      <Card 
-        title="Framer X"
-        text="9 sections"
-        image={require('../../static/images/wallpaper4.jpg')}
-      />
-      <Card 
-        title="Xcode"
-        text="8 sections"
-        image={require('../../static/images/wallpaper.jpg')}
-      />
-      <Card 
-        title="Swift"
-        text="7 sections"
-        image={require('../../static/images/wallpaper2.jpg')}
-      />
-      <Card 
-        title="React Native"
-        text="8 sections"
-        image={require('../../static/images/wallpaper3.jpg')}
-      />
-      <Card 
-        title="JavaScript"
-        text="9 sections"
-        image={require('../../static/images/wallpaper4.jpg')}
-      />
-      <Card 
-        title="HTML"
-        text="10 sections"
-        image={require('../../static/images/wallpaper.jpg')}
-      />
-      <Card 
-        title="CSS"
-        text="11 sections"
-        image={require('../../static/images/wallpaper2.jpg')}
-      />
+      <Plx parallaxData={SlideIn}>
+        <Card 
+          title="React for designers"
+          text="12 sections"
+          image={require('../../static/images/wallpaper.jpg')}
+        />
+      </Plx>
+      <Plx parallaxData={SlideIn2}>
+        <Card 
+          title="Design system in Figma"
+          text="10 sections"
+          image={require('../../static/images/wallpaper2.jpg')}
+        />
+      </Plx>
+      <Plx parallaxData={SlideIn}>
+        <Card 
+          title="Sketch"
+          text="11 sections"
+          image={require('../../static/images/wallpaper3.jpg')}
+        />
+      </Plx>
+      <Plx parallaxData={SlideIn2}>
+        <Card 
+          title="Framer X"
+          text="9 sections"
+          image={require('../../static/images/wallpaper4.jpg')}
+        />
+      </Plx>
+      <Plx parallaxData={SlideIn}>
+        <Card 
+          title="Xcode"
+          text="8 sections"
+          image={require('../../static/images/wallpaper.jpg')}
+        />
+      </Plx>
+      <Plx parallaxData={SlideIn2}>
+        <Card 
+          title="Swift"
+          text="7 sections"
+          image={require('../../static/images/wallpaper2.jpg')}
+        />
+      </Plx>
+      <Plx parallaxData={SlideIn}>
+        <Card 
+          title="React Native"
+          text="8 sections"
+          image={require('../../static/images/wallpaper3.jpg')}
+        />
+      </Plx>
+      <Plx parallaxData={SlideIn2}>
+        <Card 
+          title="JavaScript"
+          text="9 sections"
+          image={require('../../static/images/wallpaper4.jpg')}
+        />
+      </Plx>
+      <Plx parallaxData={SlideIn}>
+        <Card 
+          title="HTML"
+          text="10 sections"
+          image={require('../../static/images/wallpaper.jpg')}
+        />
+      </Plx>
+      <Plx parallaxData={SlideIn2}>
+        <Card 
+          title="CSS"
+          text="11 sections"
+          image={require('../../static/images/wallpaper2.jpg')}
+        />
+      </Plx>
     </div>
     <Section
       image={require('../../static/images/wallpaper2.jpg')}
@@ -106,3 +127,55 @@ const SectionCellGroup = styled.div`
     grid-template-columns: repeat(1, 1fr);
   }
 `
+
+const SlideIn = [
+  {
+    start: 'self',
+    startOffset: 0,
+    duration: 500,
+    easing: 'easeInOut',
+    properties: [
+      {
+        startValue: 100,
+        endValue: 0,
+        property: "translateY"
+      },
+      {
+        startValue: 0,
+        endValue: 1,
+        property: "opacity"
+      },
+      {
+        startValue: 30,
+        endValue: 0,
+        property: "rotate"
+      }
+    ]
+  }
+]
+
+const SlideIn2 = [
+  {
+    start: 'self',
+    startOffset: 0,
+    duration: 500,
+    easing: 'easeInOut',
+    properties: [
+      {
+        startValue: -100,
+        endValue: 0,
+        property: "translateY"
+      },
+      {
+        startValue: 0,
+        endValue: 1,
+        property: "opacity"
+      },
+      {
+        startValue: 30,
+        endValue: 0,
+        property: "rotate"
+      }
+    ]
+  }
+]
